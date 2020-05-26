@@ -1,0 +1,27 @@
+  
+name: 'Tweet on GithubAction'
+author: 'Z-M-Huang'
+branding:
+  icon: 'twitter'
+  color: 'gray-dark'
+description: 'Send tweet on GithubAction triggers. Please create a Twitter developer account to use this feature'
+inputs:
+  consumer_key:
+    description: 'https://developer.twitter.com/ Consumer API Key'
+    required: true
+  consumer_secret:
+    description: 'https://developer.twitter.com/ Consumer API Secret Key'
+    required: true
+  access_token:
+    description: 'https://developer.twitter.com/ Access Token'
+    required: true
+  token_secret:
+    description: 'https://developer.twitter.com/ Access Token Secret'
+    required: true
+  content:
+    description: 'Content want to send in tweet'
+    required: true
+outputs:
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
