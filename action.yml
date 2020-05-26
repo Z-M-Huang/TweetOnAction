@@ -2,7 +2,7 @@
 name: 'Tweet on GithubAction'
 author: 'Z-M-Huang'
 branding:
-  icon: 'twitter'
+  icon: 'hash'
   color: 'gray-dark'
 description: 'Send tweet on GithubAction triggers. Please create a Twitter developer account to use this feature'
 inputs:

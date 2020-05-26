@@ -9,7 +9,7 @@ Once account is created, you will need to have to create an App and get it's _Co
 # Usage
 ```yaml
 - name: Retag to latest
-  uses: Z-M-Huang/TweetOnAction@1
+  uses: Z-M-Huang/TweetOnAction@v1
   with:
     consumer_key: xvz1evFS4wEEPTGEFPHBog
     consumer_secret: kAcSOqF21Fu85e7zjz7ZN2U4ZRhfV3WpwPAoE3Z7kBw
