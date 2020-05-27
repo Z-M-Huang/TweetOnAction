@@ -6,6 +6,7 @@ on:
 
 jobs:
   tweet:
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
     runs-on: ubuntu-latest
     name: Build
     steps:
@@ -21,4 +22,4 @@ jobs:
           consumer_secret: ${{ secrets.CONSUMER_SECRET }}
           access_token: ${{ secrets.ACCESS_TOKEN }}
           token_secret: ${{ secrets.TOKEN_SECRET }}
-          content: "New commit for ${{ github.repository}}\n${{ env.head }}\n${{ env.body }}. Send tweet on GithubAction. Checkout it out at: https://github.com/Z-M-Huang/TweetOnAction"
+          content: "New commit for ${{ github.repository}}\n${{ env.head }}\n${{ env.body }}.\n Send tweet on GithubAction. Checkout it out at: https://github.com/Z-M-Huang/TweetOnAction"
